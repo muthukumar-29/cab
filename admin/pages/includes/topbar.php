@@ -5,6 +5,7 @@ if ($_SESSION['username'] == null) {
 }
 include('header.php');
 include('navbar.php');
+include('db.php');
 ?>
 
 

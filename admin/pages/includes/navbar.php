@@ -26,24 +26,56 @@
 
      <!-- Add Category -->
      <li class="nav-item">
-         <a class="nav-link" href="./add-category.php">
+         <a class="nav-link" href="./add_category.php">
              <i class="fas fa-fw fa-chart-area"></i>
              <span>Category</span></a>
      </li>
 
      <!-- Nav Item - Cabs-->
      <li class="nav-item">
-         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-             aria-expanded="true" aria-controls="collapseUtilities">
+         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#manage-cab"
+             aria-expanded="true" aria-controls="manage-cab">
              <i class="fas fa-fw fa-wrench"></i>
              <span>Cabs</span>
          </a>
-         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+         <div id="manage-cab" class="collapse" aria-labelledby="headingUtilities"
              data-parent="#accordionSidebar">
              <div class="bg-white py-2 collapse-inner rounded">
                  <h6 class="collapse-header">Cars</h6>
                  <a class="collapse-item" href="./add_cabs.php">Add</a>
                  <a class="collapse-item" href="./list_cabs.php">List</a>
+             </div>
+         </div>
+     </li>
+
+     <li class="nav-item">
+         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#manage-driver"
+             aria-expanded="true" aria-controls="manage-driver">
+             <i class="fas fa-fw fa-wrench"></i>
+             <span>Driver</span>
+         </a>
+         <div id="manage-driver" class="collapse" aria-labelledby="headingUtilities"
+             data-parent="#accordionSidebar">
+             <div class="bg-white py-2 collapse-inner rounded">
+                 <h6 class="collapse-header">Driver</h6>
+                 <a class="collapse-item" href="./add_driver.php">Add</a>
+                 <a class="collapse-item" href="./list_driver.php">List</a>
+             </div>
+         </div>
+     </li>
+
+     <li class="nav-item">
+         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#manage-packages"
+             aria-expanded="true" aria-controls="manage-packages">
+             <i class="fas fa-fw fa-wrench"></i>
+             <span>Packages</span>
+         </a>
+         <div id="manage-packages" class="collapse" aria-labelledby="headingUtilities"
+             data-parent="#accordionSidebar">
+             <div class="bg-white py-2 collapse-inner rounded">
+                 <h6 class="collapse-header">Packages</h6>
+                 <a class="collapse-item" href="./add_packages.php">Add</a>
+                 <a class="collapse-item" href="./list_packages.php">List</a>
              </div>
          </div>
      </li>
