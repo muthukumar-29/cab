@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div class="container-fluid bg-container12">
+    <div class="container-fluid bg-container13">
         <div class="row">
             <div class="col-12">
                 <div class="d-md-none">
@@ -91,79 +91,157 @@
             </div>
             <div class="col-12 text-center mt-5 pb-3 head-todo">
                 <div>
-                    <p class="text-white"><span>Home</span> . Contact Us</p>
+                    <p class="text-white"><span>Home</span> . Book a Ride</p>
                 </div>
                 <div>
-                    <h1 class="text-white">Contact Us</h1>
+                    <h1 class="text-white">Book a Ride</h1>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 mb-4 book-header">
+                <h4>Looking for a Cab?</h4>
+                <h1>Make your Booking</h1>
+                <p>To book a cab, please provide the following information: your pickup location, destination, desired
+                    pickup time, number of passengers, luggage size, any specific preferences like car type or child
+                    seats, and your contact details. We will confirm your booking and provide you with a booking
+                    reference number and driver details.</p>
+            </div>
+            <div class="col-12 cab-book-container  bg-container14">
+                <form class="booking-form-container">
+                    <h3>Select Information</h3>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Email Address">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="No of Passengers">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa-solid fa-users"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Phone no">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa-solid fa-phone-volume"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Pick Up Address">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa-solid fa-map-location-dot"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Drop Address">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Select Date">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa-solid fa-calendar-days"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Select Time">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa-regular fa-clock"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <h5>Car Type</h5>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input radio-container" type="radio" name="carType" id="car1" value="any">
+                                    <label class="form-check-label" for="car1">Any Type</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input radio-container" type="radio" name="carType" id="car2" value="hatchback">
+                                    <label class="form-check-label" for="car2">Hatchback</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input radio-container" type="radio" name="carType" id="car3" value="sedan">
+                                    <label class="form-check-label" for="car3">Sedan</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input radio-container" type="radio" name="carType" id="car4" value="suv">
+                                    <label class="form-check-label" for="car4">SUV</label>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Select Car Model">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa-solid fa-car"></i></span>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Service Type">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa-solid fa-gear"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-group form-check-inline">
+                        <input type="checkbox" class="form-check-input radio-container" id="termsCheck">
+                        <label class="form-check-label" for="termsCheck">By Clicking this you agree to our Terms & Conditions</label>
+                    </div><br/>
+                    
+                    <button type="submit" class="btn cab-book-btn">Book Cab Now</button>
+                </form>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center mb-5 abt-header">
-                <h2>.</h2>
-                <p>Contact Now</p>
-                <h1>Get in Touch</h1>
-            </div>
-            <div class="col-12 col-md-4 contact-container">
-                <div class="text-center">
-                    <i class="fa-solid fa-map-location-dot"></i>
-                    <h2>Location</h2>
-                    <p>100, xxxx xxx xxx xx,
-                        xxxxxxxxxxxxx,
-                        xxxxxxxxx.</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 contact-container">
-                <div class="text-center">
-                    <i class="fa-solid fa-envelope"></i>
-                    <h2>Email Us</h2>
-                    <p>xxxxxxxxx@mail.com</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 contact-container">
-                <div class="text-center">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    <h2>Call Us</h2>
-                    <p>+91 98765 43210</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 d-none d-md-block mt-5">
-                <img src="./img/contactimg.png" class="contact-img" width="470px" height="470px" />
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="contact-form-container">
-                    <h2>Share Your Comments</h2>
-                    <form>
-                        <div class="input-group mb-4 mr-3">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                            <div class="input-group-append">
-                                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
-                            </div>
-                        </div>
-                        <div class="input-group mb-4">
-                            <input type="email" class="form-control" placeholder="phone no">
-                            <div class="input-group-append">
-                                <span class="input-group-text"><i class="fa-solid fa-phone-volume"></i></span>
-                            </div>
-                        </div>
-                        <div class="input-group mb-4">
-                            <input type="email" class="form-control" placeholder="Email Address">
-                            <div class="input-group-append">
-                                <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
-                            </div>
-                        </div>
-                        <div class="input-group mb-4">
-                            <textarea placeholder="Write your message"></textarea>
-                        </div>
-                        <button>Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    
+
 
     <!-- Footer -->
 
@@ -250,6 +328,11 @@
     </div>
 
     <!-- End Footer -->
+
+
+
+
+
 
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
