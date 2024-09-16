@@ -77,6 +77,9 @@
         width:385px !important;
         height:240px !important;
     }
+    .choose-border{
+        border-width:0 !important;
+    }
 }
 @media (max-width:375px){
     .home-text h1{
