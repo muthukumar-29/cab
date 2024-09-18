@@ -32,7 +32,7 @@ include('./includes/topbar.php');
                     <td><?php $id = $data['cab_id'];
                         $q = mysqli_fetch_assoc(mysqli_query($connect, "select * from cabs where id = '$id' limit 1"));
                         echo $q['car_name'] ?></td>
-                    <td><img src="<?php echo $data['license'] ?>" width="50"></td>
+                    <td><img src="<?php echo $data['license'] ?>" width="150"></td>
                     <td><span class="p-2 rounded-lg text-white <?php echo $data['status']=='inactive' ? 'bg-danger' : 'bg-success' ?>"><?php echo $data['status'] ?></span></td>
                     <td>
                         <a href="add_driver.php?id=<?php echo $data['id'] ?>"><img src="./icons/edit.svg" alt="" width="30"></a>

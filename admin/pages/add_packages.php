@@ -2,7 +2,7 @@
 include('./includes/topbar.php');
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $data = mysqli_fetch_assoc(mysqli_query($connect, "select * from driver where id='$id'"));
+    $data = mysqli_fetch_assoc(mysqli_query($connect, "select * from packages where id='$id'"));
 }
 ?>
 
@@ -20,7 +20,7 @@ if (isset($_GET['id'])) {
         </div>
         <div class="form-group">
             <label for="description">Description</label>
-            <textarea name="description" id="" rows="5" class="form-control" placeholder="Description" value="<?php echo isset($data['description']) ? $data['description'] : '' ?>"></textarea>
+            <textarea name="description" id="" rows="5" class="form-control" placeholder="Description"><?php echo isset($data['description']) ? $data['description'] : '' ?></textarea>
         </div>
         <div class="form-group">
             <label for="duration">Duration (In Days)</label>
@@ -32,7 +32,7 @@ if (isset($_GET['id'])) {
         </div>
         <div class="form-group">
             <label for="places">Places</label>
-            <input type="text" name="places" id="" class="form-control" placeholder="Places" value="<?php echo isset($data['places']) ? $data['places'] : '' ?>">
+            <input type="text" name="places" id="" class="form-control" placeholder="Places" value="<?php echo isset($data['place']) ? $data['place'] : '' ?>">
         </div>
 
         <?php if (isset($data['image'])) { ?>
@@ -74,7 +74,11 @@ if (isset($_GET['id'])) {
             event.preventDefault();
 
             var formData = new FormData(this);
-            formData.append('action', 'add-packages');
+            if ($('input[name="id"]').length > 0) {
+                formData.append('action', 'edit-package');
+            } else {
+                formData.append('action', 'add-packages');
+            }
 
             $.ajax({
                 url: '../ajax/ajaxhandler.php',
@@ -85,7 +89,7 @@ if (isset($_GET['id'])) {
                 processData: false,
                 success: function(response) {
                     if (response.success) {
-                        alert('Packages added successfully');
+                        alert(response.success);
                         window.location.href = 'list_packages.php';
                     } else {
                         console.log("Failed...")

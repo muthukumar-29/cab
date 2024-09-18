@@ -34,7 +34,7 @@ include('./includes/topbar.php');
                         echo $q['category_name'] ?></td>
                     <td><?php echo $data['seats'] ?></td>
                     <td><?php echo $data['price'] ?></td>
-                    <td><img src="<?php echo $data['image'] ?>" width="50"></td>
+                    <td><img src="<?php echo $data['image'] ?>" width="150"></td>
                     <td><span class="p-2 rounded-lg text-white <?php echo $data['status']=='not available' ? 'bg-danger' : 'bg-success' ?>"><?php echo $data['status'] ?></span></td>
                     <td>
                         <!-- <img style="cursor: pointer;" onclick="edit_cabs(<?php echo $data['id'] ?>)" src="./icons/edit.svg" width="30" alt=""> -->
