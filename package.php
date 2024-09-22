@@ -41,23 +41,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-none d-md-block">
-                    <div class="header-container d-flex flex-row justify-content-between text-white ml-5 mr-5 mt-2">
-                        <div>
-                            <p><i class="fa-solid fa-phone"></i> 98766543210</p>
+                <div class="d-none d-md-block header-container pr-5">
+                    <div class="d-flex justify-content-between align-items-center mt-2 text-white">
+                        <!-- Left section (Phone & Email) -->
+                        <div class="d-flex flex-row ">
+                            <div class="mr-4 ml-5">
+                                <p><i class="fa-solid fa-phone"></i> 98766543210</p>
+                            </div>
+                            <div>
+                                <p><i class="fa-solid fa-envelope"></i> relaxcab@gmail.com</p>
+                            </div>
                         </div>
-                        <div>
-                            <p><i class="fa-solid fa-envelope"></i> relaxcab@gmail.com</p>
+                
+                        <!-- Center section (Logo) -->
+                        <div class="d-flex flex-grow-1 justify-content-center mr-5">
+                            <img src="./img/logo.png" alt="logo" class="img-fluid" style="max-width: 150px;" />
                         </div>
-                        <div>
-                            <img src="./img/logo.png" alt="logo" />
-                        </div>
-                        <div>
+                
+                        <!-- Right section (Login) -->
+                        <div class="mr-5">
                             <p><i class="fa-solid fa-user"></i> Login</p>
                         </div>
                     </div>
-                </div><br />
-                <nav class="navbar navbar-expand-lg navbar-custom mt-3">
+                </div><br/> 
+                <nav class="navbar navbar-expand-lg navbar-custom m-auto">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars navbar-toggler-icon"></i>
@@ -65,31 +72,31 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Home</a>
+                                <a class="nav-link" href="./index.php">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./about.html">About</a>
+                                <a class="nav-link" href="./about.php">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./traiff.html">Tariff</a>
+                                <a class="nav-link" href="./traiff.php">Tariff</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./package.html">Packages</a>
+                                <a class="nav-link" href="./package.php">Packages</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./gallery.html">Gallery</a>
+                                <a class="nav-link" href="./gallery.php">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact</a>
+                                <a class="nav-link" href="./contact.php">Contact</a>
                             </li>
                         </ul>
                     </div>
-                    <a href="./book.html" class="btn btn-custom">
-                        <img src="./img/nav-logo.png" alt="Car" style="width: 35px; margin-right: 10px;"> Book a Ride
+                    <a href="./book.php" class="btn btn-custom">
+                        <img src="./img/nav-logo.png" alt="Car"> Book a Ride
                     </a>
                 </nav>
             </div>
-            <div class="col-12 text-center mt-5 pb-3 head-todo">
+            <div class="col-12 text-center mt-5 pb-5 head-todo">
                 <div>
                     <p class="text-white"><span>Home</span> . Packages</p>
                 </div>
@@ -100,7 +107,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container pt-5 pb-5">
         <div class="row">
             <div class="col-12 text-center mb-4 abt-header">
                 <h2>.</h2>
@@ -109,7 +116,7 @@
             </div>
             <div class="col-12 col-md-4 mt-3">
                 <div class="offer-container text-center">
-                    <img src="./img/offer1.png" />
+                    <img src="./img/offer1.png" class="img-fluid" />
                     <h2>One way Trip</h2>
                     <p>Travel to a destination without returning to the starting point, often for relocation,
                         exploration,
@@ -119,7 +126,7 @@
             </div>
             <div class="col-12 col-md-4 mt-3">
                 <div class="offer-container text-center">
-                    <img src="./img/offer2.png" />
+                    <img src="./img/offer2.png" class="img-fluid"/>
                     <h2>Round Trip</h2>
                     <p>Daily commute, a rhythmic journey between work and home, a familiar cycle.</p>
                     <button>Book cab Now</button>
@@ -127,7 +134,7 @@
             </div>
             <div class="col-12 col-md-4 mt-3">
                 <div class="offer-container text-center">
-                    <img src="./img/offer3.png" />
+                    <img src="./img/offer3.png" class="img-fluid" />
                     <h2>Outstation Trip</h2>
                     <p>The excitement of travel with the discovery of new destinations, offering a change of scenery and
                         pace.</p>
@@ -138,7 +145,7 @@
     </div>
 
     <!-- special packages -->
-    <div class="container mb-5">
+    <div class="container mb-5 pt-5 pb-5">
         <div class="row">
             <div class="col-12 text-center mb-4 abt-header">
                 <h2>.</h2>
@@ -147,7 +154,7 @@
             </div>
             <div class="col-12 col-md-4 mt-3">
                 <div class="offer-container text-center">
-                    <img src="./img/packages/sp1.png" />
+                    <img src="./img/packages/sp1.png" class="img-fluid" />
                     <h2>TamilNadu Tour Package</h2>
                     <p>Kanyakumari, Rameswaram, Madurai, Kodaikanal, Ooty, Palani, Rameswaram, Pollachi, Thiruchendur, Kanchipuram</p>
                     <button>Book cab Now</button>
@@ -155,7 +162,7 @@
             </div>
             <div class="col-12 col-md-4 mt-3">
                 <div class="offer-container text-center">
-                    <img src="./img/packages/sp2.png" />
+                    <img src="./img/packages/sp2.png" class="img-fluid" />
                     <h2>Kerala Tour Package</h2>
                     <p>Munnar, Kovalam, Kumarakom, Trivandrum, Kochi, Alleppey, Thekkady, Poovar,Vagamon, Palakkad, Kozhikode</p>
                     <button>Book cab Now</button>
@@ -163,7 +170,7 @@
             </div>
             <div class="col-12 col-md-4 mt-3">
                 <div class="offer-container text-center">
-                    <img src="./img/packages/sp3.png" />
+                    <img src="./img/packages/sp3.png" class="img-fluid"/>
                     <h2>Karnataka Tour Package</h2>
                     <p>Mysore Palace, Bangalore Tours, Abbey Falls, Coorg, Wonderla, Garden, Sree Virupaksha Temple</p>
                     <button>Book cab Now</button>
@@ -171,7 +178,7 @@
             </div>
             <div class="col-12 col-md-4 mt-3">
                 <div class="offer-container text-center">
-                    <img src="./img/packages/sp4.png" />
+                    <img src="./img/packages/sp4.png" class="img-fluid" />
                     <h2>Honeymoon Tour Package</h2>
                     <p>Ooty, Kodaikanal, Munnar, Coonor, Coimbatore, Chennai, Kanchipuram, Mahabalipuram, Pondicherry, Trichy</p>
                     <button>Book cab Now</button>
@@ -179,7 +186,7 @@
             </div>
             <div class="col-12 col-md-4 mt-3">
                 <div class="offer-container text-center">
-                    <img src="./img/packages/sp5.png" />
+                    <img src="./img/packages/sp5.png" class="img-fluid"/>
                     <h2>Professional Tour Package</h2>
                     <p>Chennai, Aurovile, Hogenakkal, Mahabalipuram, Kanyakumari, Kanchiuram, Srirangam, Yercaud, Munnar, Ooty</p>
                     <button>Book cab Now</button>
@@ -187,7 +194,7 @@
             </div>
             <div class="col-12 col-md-4 mt-3">
                 <div class="offer-container text-center">
-                    <img src="./img/packages/sp6.png" />
+                    <img src="./img/packages/sp6.png" class="img-fluid"/>
                     <h2>Boys Tour Package</h2>
                     <p>Ooty, Kodaikanal, Munnar, Coonor, Coimbatore, Chennai, Kanchipuram, Mahabalipuram, Pondicherry, Trichy</p>
                     <button>Book cab Now</button>
@@ -195,7 +202,7 @@
             </div>
             <div class="col-12 col-md-4 mt-3">
                 <div class="offer-container text-center">
-                    <img src="./img/packages/sp7.png" />
+                    <img src="./img/packages/sp7.png" class="img-fluid"/>
                     <h2>Family Tour Package</h2>
                     <p>Mahabalipuram, Rameshwaram, Thanjavur, Velankanni , Kanchipuram, Kanyakumari</p>
                     <button>Book cab Now</button>
@@ -203,7 +210,7 @@
             </div>
             <div class="col-12 col-md-4 mt-3">
                 <div class="offer-container text-center">
-                    <img src="./img/packages/sp8.png" />
+                    <img src="./img/packages/sp8.png" class="img-fluid"/>
                     <h2>Temple Tour Package</h2>
                     <p>Murugan Temples, Navagraha, Kanchipuram, Rameswaram, Thanjavur, Kumbakonam, Velankanni, Tiruvannamalai</p>
                     <button>Book cab Now</button>
@@ -211,7 +218,7 @@
             </div>
             <div class="col-12 col-md-4 mt-3">
                 <div class="offer-container text-center">
-                    <img src="./img/packages/sp9.png" />
+                    <img src="./img/packages/sp9.png" class="img-fluid"/>
                     <h2>Wildlife Tour Package</h2>
                     <p>Mudumalai, Valparai, Anamalai Tiger Reserve, Masinagudi, Satyamangalam, Mundanthurai Tiger Reserve, Megamalai</p>
                     <button>Book cab Now</button>
@@ -224,87 +231,7 @@
 
     <!-- Footer -->
 
-    <div class="bg_container3">
-        <div class="zig-container">
-            <div class="col-12 zigzaw">
-                <img src="./img/zigzaw2.png" />
-                <img src="./img/zigzaw2.png" />
-            </div>
-        </div>
-        <div class="container-fluid bg_container pt-5">
-            <div class="row">
-                <div class="d-md-flex flex-row">
-                    <div class="col-12 col-md-3  footer_content ">
-                        <h3>About</h3>
-                        <p class="text-justify">Relax Cabs is one of the best cab service around TamilNadu. We give best
-                            rides with best
-                            quality services. </p>
-                    </div>
-                    <div class="col-12 col-md-3 footer_content ">
-                        <h3>Links</h3>
-                        <p href="#">Home</p>
-                        <p href="#">About</p>
-                        <p href="#">Tariff</p>
-                        <p href="#">Packages</p>
-                        <p href="#">Gallery</p>
-                        <p href="#">Contact</p>
-                    </div>
-                    <div class="col-12 col-md-3 footer_content ">
-                        <h3>Contact</h3>
-                        <p><i class="fa-solid fa-location-dot"></i> 100,xxxxxxxxxxxxxxxxxx,
-                            xxxxxxxxxxxxxxxxxxxxxxx</p>
-                        <p><i class="fa-solid fa-phone-volume"></i> +91 98765 43210</p>
-                        <p><i class="fa-solid fa-envelope"></i> xxxxxxxxx@mail.com</p>
-                    </div>
-                    <div class="col-12 col-md-3 footer_content">
-                        <h3>Newsletter</h3>
-                        <p>Sign up now for our mailing list to get all latest news and updates from Relax Cabs.</p>
-                        <div class="form-container">
-                            <form>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Enter Your E-mail">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fa-solid fa-arrow-right"></i></span>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr class="line">
-            <div class="row d-none d-md-block pb-2">
-                <div class="d-flex flex-row footer_content">
-                    <div class="col-md-2 col-12">
-                        <img src="./img/logo.png" />
-                    </div>
-                    <div class="col-md-3 col-12">
-                        <p>Copyright &copy; 2024, All Rights Reserved.</p>
-                    </div>
-                    <div class="col-md-3 col-12">
-                        <p>Desgined by ANJANA INFOTECH</p>
-                    </div>
-                    <div class="col-md-2 col-12">
-                        <p>Terms of use</p>
-                    </div>
-                    <div class="col-md-2 col-12">
-                        <p>Privacy Policy</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row d-md-none">
-                <div class="col-12 text-center footer_content">
-                    <p>Copyright &copy; 2024, All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-        <div class="zig-container">
-            <div class="col-12 zigzaw">
-                <img src="./img/zigzaw2.png" />
-                <img src="./img/zigzaw2.png" />
-            </div>
-        </div>
-    </div>
+    <?php include('./include/footer.php');?>
 
     <!-- End Footer -->
 

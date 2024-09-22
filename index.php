@@ -41,23 +41,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-none d-md-block">
-                    <div class="header-container d-flex flex-row justify-content-between text-white ml-5 mr-5 mt-2">
-                        <div>
-                            <p><i class="fa-solid fa-phone"></i> 98766543210</p>
+                <div class="d-none d-md-block header-container pr-5">
+                    <div class="d-flex justify-content-between align-items-center mt-2 text-white">
+                        <!-- Left section (Phone & Email) -->
+                        <div class="d-flex flex-row ">
+                            <div class="mr-4 ml-5">
+                                <p><i class="fa-solid fa-phone"></i> 98766543210</p>
+                            </div>
+                            <div>
+                                <p><i class="fa-solid fa-envelope"></i> relaxcab@gmail.com</p>
+                            </div>
                         </div>
-                        <div>
-                            <p><i class="fa-solid fa-envelope"></i> relaxcab@gmail.com</p>
+
+                        <!-- Center section (Logo) -->
+                        <div class="d-flex flex-grow-1 justify-content-center mr-5">
+                            <img src="./img/logo.png" alt="logo" class="img-fluid" style="max-width: 150px;" />
                         </div>
-                        <div>
-                            <img src="./img/logo.png" alt="logo" />
-                        </div>
-                        <div>
+
+                        <!-- Right section (Login) -->
+                        <div class="mr-5">
                             <p><i class="fa-solid fa-user"></i> Login</p>
                         </div>
                     </div>
                 </div><br />
-                <nav class="navbar navbar-expand-lg navbar-custom">
+                <nav class="navbar navbar-expand-lg navbar-custom m-md-auto">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars navbar-toggler-icon"></i>
@@ -65,36 +72,39 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Home</a>
+                                <a class="nav-link" href="./index.php">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./about.html">About us</a>
+                                <a class="nav-link" href="./about.php">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./traiff.html">Tariff</a>
+                                <a class="nav-link" href="./traiff.php">Tariff</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./package.html">Packages</a>
+                                <a class="nav-link" href="./package.php">Packages</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./gallery.html">Gallery</a>
+                                <a class="nav-link" href="./gallery.php">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact us</a>
+                                <a class="nav-link" href="./contact.php">Contact us</a>
                             </li>
                         </ul>
                     </div>
-                    <a href="./book.html" class="btn btn-custom">
-                        <img src="./img/nav-logo.png" alt="Car" style="width: 35px; margin-right: 10px;"> Book a Ride
+                    <a href="./book.php" class="btn btn-custom">
+                        <img src="./img/nav-logo.png" alt="Car"> Book a Ride
                     </a>
                 </nav>
             </div>
             <div class="col-12">
-                <div data-aos="fade-down" data-aos-delay="400" class="home-text mt-5 mb-5">
+                <div data-aos="fade-down" data-aos-delay="600" loading="lazy" class="home-text mt-5 mb-5">
                     <h1 class="text-white text-center">Ride in Comfort & Style</h1>
                 </div>
-                <div data-aos="fade-up" data-aos-delay="400" class="home-text1 mt-4 text-center">
+                <div data-aos="fade-up" data-aos-delay="900" loading="lazy" class="home-text1 mt-4 text-center">
                     <h1 class="text-white mb-4">Fast, Safe & Affordable Rides with Relax Cabs</h1>
+                    <!-- <button class="mt-3">Book a Ride</button> -->
+                </div>
+                <div data-aos="fade-down" data-aos-delay="1000" loading="lazy" class="home-text1 mt-4 text-center">
                     <button class="mt-3">Book a Ride</button>
                 </div>
             </div>
@@ -103,75 +113,83 @@
 
     <div class="container-fluid bg-container1 position-relative">
         <div class="row">
-            <div class="mt-5">
-                <div class="d-md-flex flex-row justify-content-between">
-                    <div class="col-12 col-md-6">
-                        <div class="text-white banner-text">
-                            <p>Looking for Cab?</p>
-                            <h1>Make your Booking</h1>
-                            <p>We are committed to making your rides memorable by tailoring our services to your needs.
-                            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="mt-5">
+                        <div class="d-md-flex flex-row justify-content-between">
+                            <div class="col-12 col-md-6">
+                                <div class="text-white banner-text">
+                                    <p>Looking for Cab?</p>
+                                    <h1>Make your Booking</h1>
+                                    <p>We are committed to making your rides memorable by tailoring our services to your
+                                        needs.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 form-container">
+                                <form>
+                                    <div class="d-md-flex flex-row justify-content-between">
+                                        <div class="input-group mb-4 mr-3">
+                                            <input type="text" class="form-control" placeholder="Your Name">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group mb-4">
+                                            <input type="email" class="form-control" placeholder="Email Address">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i
+                                                        class="fa-solid fa-envelope"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-md-flex flex-row justify-content-between">
+                                        <div class="input-group mb-4 mr-3">
+                                            <input type="text" class="form-control" placeholder="Pick Up Address">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i
+                                                        class="fa-solid fa-map-location-dot"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group mb-4">
+                                            <input type="text" class="form-control" placeholder="Drop Address">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i
+                                                        class="fa-solid fa-location-dot"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-md-flex flex-row justify-content-between">
+                                        <div class="input-group mb-4 mr-3">
+                                            <input type="text" class="form-control" placeholder="Select Date">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i
+                                                        class="fa-solid fa-calendar-days"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group mb-4">
+                                            <input type="text" class="form-control" placeholder="Select Time">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i
+                                                        class="fa-regular fa-clock"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-md-flex flex-row justify-content-between">
+                                        <div class="input-group mb-4 mr-3 ">
+                                            <input type="text" class="form-control" placeholder="No of Passengers">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="fa-solid fa-users"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group mb-4">
+                                            <input type="button" class="form-control form-btn" value="choose your Cab">
+                                        </div>
+                                        <!-- <input type="button" class="input-group-text" value="Choose Your Cab"/> -->
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 form-container">
-                        <form>
-                            <div class="d-flex flex-row justify-content-between">
-                                <div class="input-group mb-4 mr-3">
-                                    <input type="text" class="form-control" placeholder="Your Name">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
-                                    </div>
-                                </div>
-                                <div class="input-group mb-4">
-                                    <input type="email" class="form-control" placeholder="Email Address">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row justify-content-between">
-                                <div class="input-group mb-4 mr-3">
-                                    <input type="text" class="form-control" placeholder="Pick Up Address">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i
-                                                class="fa-solid fa-map-location-dot"></i></span>
-                                    </div>
-                                </div>
-                                <div class="input-group mb-4">
-                                    <input type="text" class="form-control" placeholder="Drop Address">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row justify-content-between">
-                                <div class="input-group mb-4 mr-3">
-                                    <input type="text" class="form-control" placeholder="Select Date">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fa-solid fa-calendar-days"></i></span>
-                                    </div>
-                                </div>
-                                <div class="input-group mb-4">
-                                    <input type="text" class="form-control" placeholder="Select Time">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fa-regular fa-clock"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row justify-content-between">
-                                <div class="input-group mb-4 mr-3 ">
-                                    <input type="text" class="form-control" placeholder="No of Passengers">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fa-solid fa-users"></i></span>
-                                    </div>
-                                </div>
-                                <div class="input-group mb-4">
-                                    <input type="button" class="form-control form-btn" value="choose your Cab">
-                                </div>
-                                <!-- <input type="button" class="input-group-text" value="Choose Your Cab"/> -->
-                            </div>
-                        </form>
-
                     </div>
                 </div>
             </div>
@@ -185,7 +203,7 @@
     </div>
 
     <!-- About us section     -->
-    <div class="container">
+    <div class="container pt-5 pb-5">
         <div class="row">
             <div class="col-12 text-center mb-4 abt-header">
                 <h2>.</h2>
@@ -194,15 +212,15 @@
             </div>
             <div class="d-md-flex flex-row">
                 <div class="col-12 col-md-6 d-none d-md-block">
-                    <img src="./img/about.png" width="430px" height="590px" />
+                    <img src="./img/about.png" width="430px" height="590px" class="img-fluid" />
                 </div>
-                <div class="col-12 col-md-6 d-none d-md-block ">
+                <div class="col-12 col-md-6 d-none d-md-block">
                     <div class="d-md-flex flex-row">
                         <div class="side-content">
-                            <p class="pt-5">We are specialized in providing a high Quality service.</p>
+                            <p class="img-fluid">We are specialized in providing a high Quality service.</p>
                         </div>
                         <div class="side-img">
-                            <img src="./img/sideabt.png" width="230px" height="225px" />
+                            <img src="./img/sideabt.png" width="230px" height="225px" class="img-fluid" />
                         </div>
                     </div>
                     <div class="mt-4 abt-content">
@@ -241,86 +259,85 @@
     <!-- End About us section -->
 
     <!-- Number speak -->
-    <div class="container-fluid bg-container4 mt-4">
+    <div class="container-fluid bg-container4 mt-4 pt-5 pb-5">
         <div class="row">
             <div class="col-12 text-center mb-4 abt-header">
                 <h2>.</h2>
                 <p>Our Fun Facts</p>
                 <h1>Numbers Speak</h1>
             </div>
-            <div class="d-md-flex flex-row m-auto">
-                <div class="col-12 col-md-3 mt-3">
-                    <div class="num-card text-center">
-                        <img src="./img/icon1.png" />
-                        <h2>100+</h2>
-                        <p>Trips Completed</p>
-                    </div>
+        </div>
+        <div class="row justify-content-center pl-md-5 pr-md-5">
+            <div class="col-12 col-md-3 mt-3">
+                <div class="num-card text-center">
+                    <img src="./img/icon1.png" alt="Trips Icon" />
+                    <h2>100+</h2>
+                    <p>Trips Completed</p>
                 </div>
-
-                <div class="col-12 col-md-3 mt-3">
-                    <div class="num-card text-center">
-                        <img src="./img/icon2.png" />
-                        <h2>500+</h2>
-                        <p>Happy Clients</p>
-                    </div>
+            </div>
+            <div class="col-12 col-md-3 mt-3">
+                <div class="num-card text-center">
+                    <img src="./img/icon2.png" alt="Clients Icon" />
+                    <h2>500+</h2>
+                    <p>Happy Clients</p>
                 </div>
-
-                <div class="col-12 col-md-3 mt-3">
-                    <div class="num-card text-center">
-                        <img src="./img/icon3.png" />
-                        <h2>15+</h2>
-                        <p>Cabs</p>
-                    </div>
+            </div>
+            <div class="col-12 col-md-3 mt-3">
+                <div class="num-card text-center">
+                    <img src="./img/icon3.png" alt="Cabs Icon" />
+                    <h2>15+</h2>
+                    <p>Cabs</p>
                 </div>
-
-                <div class="col-12 col-md-3 mt-3">
-                    <div class="num-card text-center">
-                        <img src="./img/icon4.png" />
-                        <h2>20+</h2>
-                        <p>Drivers</p>
-                    </div>
+            </div>
+            <div class="col-12 col-md-3 mt-3 ">
+                <div class="num-card text-center">
+                    <img src="./img/icon4.png" alt="Drivers Icon" />
+                    <h2>20+</h2>
+                    <p>Drivers</p>
                 </div>
             </div>
         </div>
     </div>
 
+
     <!-- End Number speak -->
 
     <!-- choose us section -->
-    <div class="container-fluid bg-container5">
-        <div class="row">
-            <div class="col-12 text-center mb-4 abt-header">
+    <div class="container-fluid bg-container5 pt-5 pb-5">
+        <div class="row text-center pl-md-5 pr-md-5">
+            <div class="col-12 mb-4 abt-header">
                 <h2>.</h2>
                 <p>Relax Benefit List</p>
                 <h1 class="text-white">Why Choose Us</h1>
             </div>
-            <div class="col-12 col-md-3">
-                <div class="choose-container">
-                    <img src="./img/icon11.png" />
+            <!-- Benefit Boxes -->
+            <div class="col-12 col-md-3 d-flex align-items-stretch ">
+                <div class="choose-container p-4 text-center">
+                    <img src="./img/icon11.png" class="img-fluid mb-3" alt="Safety Guarantee Icon" />
                     <h2>Safety Guarantee</h2>
                     <p>Your safety is our priority. Ride with confidence. All our drivers are verified & background
                         checked. Safe rides, every time.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-3">
-                <div class="choose-container choose-border">
-                    <img src="./img/icon12.png" />
+            <div class="col-12 col-md-3 d-flex align-items-stretch">
+                <div class="choose-container choose-border p-4 text-center">
+                    <img src="./img/icon12.png" class="img-fluid mb-3" alt="On-Time Pickup Icon" />
                     <h2>On-Time Pickup</h2>
                     <p>No more waiting. Your ride arrives when it should. Experience the reliability of our on-time
                         pickups.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-3">
-                <div class="choose-container choose-border">
-                    <img src="./img/icon13.png" />
+            <div class="col-12 col-md-3 d-flex align-items-stretch">
+                <div class="choose-container choose-border p-4 text-center">
+                    <img src="./img/icon13.png" class="img-fluid mb-3" alt="Affordable Ride Icon" />
                     <h2>Affordable Ride</h2>
-                    <p>Quality rides, affordable prices. Experience comfort and convenience with Budget-friendly rides.
+                    <p>Quality rides, affordable prices. Experience comfort and convenience with budget-friendly rides.
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-md-3">
-                <div class="choose-container choose-border">
-                    <img src="./img/icon14.png" />
+            <div class="col-12 col-md-3 d-flex align-items-stretch">
+                <div class="choose-container choose-border p-4 text-center">
+                    <img src="./img/icon14.png" class="img-fluid mb-3" alt="24/7 Support Icon" />
                     <h2>24/7 Support</h2>
                     <p>Never alone on the road. Enjoy peace of mind with our 24/7 support service.</p>
                 </div>
@@ -328,10 +345,11 @@
         </div>
     </div>
 
+
     <!-- End choose us section -->
 
     <!-- Choose car section -->
-    <div class="container">
+    <div class="container pt-5 pb-5">
         <div class="row">
             <div class="col-12 text-center mb-4 abt-header">
                 <h2>.</h2>
@@ -345,7 +363,7 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="car-container text-center car-btn">
-                    <img src="./img/car1.png" class="car-img" />
+                    <img src="./img/car1.png" class="car-img img-fluid" />
                     <img src="./img/carlogo1.png " class="car-logo mt-3 mb-3" />
                     <h2 class="mb-3">Hyundai i20</h2>
                     <p>Base rate - &#8377;1000</p>
@@ -356,7 +374,7 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="car-container text-center car-btn">
-                    <img src="./img/car2.png" class="car-img" />
+                    <img src="./img/car2.png" class="car-img img-fluid" />
                     <img src="./img/carlogo2.png " class="car-logo mt-3 mb-3" />
                     <h2 class="mb-3">Suzuki Swift</h2>
                     <p>Base rate - &#8377;1200</p>
@@ -367,7 +385,7 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="car-container text-center car-btn">
-                    <img src="./img/car3.png" class="car-img" />
+                    <img src="./img/car3.png" class="car-img img-fluid" />
                     <img src="./img/carlogo3.png " class="car-logo mt-3 mb-3" />
                     <h2 class="mb-3">Toyota Innova</h2>
                     <p>Base rate - &#8377;1500</p>
@@ -383,16 +401,16 @@
     <!-- End choose car section -->
 
     <!-- Book now section -->
-    <div class="container-fluid bg-container6 mt-4">
+    <div class="container-fluid bg-container6 mt-4 pt-5 ">
         <div class="row">
-            <div class="col-12 p-4 book-container">
+            <div class="col-12 p-4 book-container pl-md-5 pr-md-5">
                 <p>Make a call or Book Online</p>
                 <div class="d-md-flex flex-row justify-content-between">
                     <h1>Call our Agent to get a Quote</h1>
                     <button class="btn book-btn">Book Cab Now</button>
                 </div>
             </div>
-            <div class="zig-container">
+            <div class="zig-container pt-5">
                 <div class="col-12 zigzaw">
                     <img src="./img/zigzaw2.png" />
                     <img src="./img/zigzaw2.png" />
@@ -405,7 +423,7 @@
 
 
     <!-- Testimonial section -->
-    <div class="container-fluid bg-container7 py-1">
+    <div class="container-fluid bg-container7 py-1 pt-5 pb-5">
         <div class="row">
             <div class="col-12 text-center mb-4 abt-header">
                 <h2>.</h2>
@@ -442,92 +460,9 @@
     <!-- End Testimonial section -->
 
 
-
-    <!-- Footer -->
-
-    <div class="bg_container3">
-        <div class="zig-container">
-            <div class="col-12 zigzaw">
-                <img src="./img/zigzaw2.png" />
-                <img src="./img/zigzaw2.png" />
-            </div>
-        </div>
-        <div class="container-fluid bg_container pt-5">
-            <div class="row">
-                <div class="d-md-flex flex-row">
-                    <div class="col-12 col-md-3  footer_content ">
-                        <h3>About</h3>
-                        <p class="text-justify">Relax Cabs is one of the best cab service around TamilNadu. We give best
-                            rides with best
-                            quality services. </p>
-                    </div>
-                    <div class="col-12 col-md-3 footer_content ">
-                        <h3>Links</h3>
-                        <p href="#">Home</p>
-                        <p href="#">About</p>
-                        <p href="#">Tariff</p>
-                        <p href="#">Packages</p>
-                        <p href="#">Gallery</p>
-                        <p href="#">Contact</p>
-                    </div>
-                    <div class="col-12 col-md-3 footer_content ">
-                        <h3>Contact</h3>
-                        <p><i class="fa-solid fa-location-dot"></i> 100,xxxxxxxxxxxxxxxxxx,
-                            xxxxxxxxxxxxxxxxxxxxxxx</p>
-                        <p><i class="fa-solid fa-phone-volume"></i> +91 98765 43210</p>
-                        <p><i class="fa-solid fa-envelope"></i> xxxxxxxxx@mail.com</p>
-                    </div>
-                    <div class="col-12 col-md-3 footer_content">
-                        <h3>Newsletter</h3>
-                        <p>Sign up now for our mailing list to get all latest news and updates from Relax Cabs.</p>
-                        <div class="form-container">
-                            <form>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Enter Your E-mail">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fa-solid fa-arrow-right"></i></span>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr class="line">
-            <div class="row d-none d-md-block pb-2">
-                <div class="d-flex flex-row footer_content">
-                    <div class="col-md-2 col-12">
-                        <img src="./img/logo.png" />
-                    </div>
-                    <div class="col-md-3 col-12">
-                        <p>Copyright &copy; 2024, All Rights Reserved.</p>
-                    </div>
-                    <div class="col-md-3 col-12">
-                        <p>Desgined by ANJANA INFOTECH</p>
-                    </div>
-                    <div class="col-md-2 col-12">
-                        <p>Terms of use</p>
-                    </div>
-                    <div class="col-md-2 col-12">
-                        <p>Privacy Policy</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row d-md-none">
-                <div class="col-12 text-center footer_content">
-                    <p>Copyright &copy; 2024, All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-        <div class="zig-container">
-            <div class="col-12 zigzaw">
-                <img src="./img/zigzaw2.png" />
-                <img src="./img/zigzaw2.png" />
-            </div>
-        </div>
-    </div>
-
-    <!-- End Footer -->
+    <!-- Footer section -->
+    <?php include('./include/footer.php');?>
+    <!-- End footer section -->
 
 
 

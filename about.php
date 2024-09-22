@@ -41,23 +41,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-none d-md-block">
-                    <div class="header-container d-flex flex-row justify-content-between text-white ml-5 mr-5 mt-2">
-                        <div>
-                            <p><i class="fa-solid fa-phone"></i> 98766543210</p>
+                <div class="d-none d-md-block header-container pr-5">
+                    <div class="d-flex justify-content-between align-items-center mt-2 text-white">
+                        <!-- Left section (Phone & Email) -->
+                        <div class="d-flex flex-row ">
+                            <div class="mr-4 ml-5">
+                                <p><i class="fa-solid fa-phone"></i> 98766543210</p>
+                            </div>
+                            <div>
+                                <p><i class="fa-solid fa-envelope"></i> relaxcab@gmail.com</p>
+                            </div>
                         </div>
-                        <div>
-                            <p><i class="fa-solid fa-envelope"></i> relaxcab@gmail.com</p>
+                
+                        <!-- Center section (Logo) -->
+                        <div class="d-flex flex-grow-1 justify-content-center mr-5">
+                            <img src="./img/logo.png" alt="logo" class="img-fluid" style="max-width: 150px;" />
                         </div>
-                        <div>
-                            <img src="./img/logo.png" alt="logo" />
-                        </div>
-                        <div>
+                
+                        <!-- Right section (Login) -->
+                        <div class="mr-5">
                             <p><i class="fa-solid fa-user"></i> Login</p>
                         </div>
                     </div>
-                </div><br />
-                <nav class="navbar navbar-expand-lg navbar-custom mt-3">
+                </div><br/> 
+                <nav class="navbar navbar-expand-lg navbar-custom m-auto">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars navbar-toggler-icon"></i>
@@ -65,31 +72,31 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Home</a>
+                                <a class="nav-link" href="./index.php">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./about.html">About us</a>
+                                <a class="nav-link" href="./about.php">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./traiff.html">Tariff</a>
+                                <a class="nav-link" href="./traiff.php">Tariff</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./package.html">Packages</a>
+                                <a class="nav-link" href="./package.php">Packages</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./gallery.html">Gallery</a>
+                                <a class="nav-link" href="./gallery.php">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Contact us</a>
+                                <a class="nav-link" href="./contact.php">Contact us</a>
                             </li>
                         </ul>
                     </div>
-                    <a href="./book.html" class="btn btn-custom">
-                        <img src="./img/nav-logo.png" alt="Car" style="width: 35px; margin-right: 10px;"> Book a Ride
+                    <a href="./book.php" class="btn btn-custom">
+                        <img src="./img/nav-logo.png" alt="Car" > Book a Ride
                     </a>
                 </nav>
             </div>
-            <div class="col-12 text-center mt-5 pb-3 head-todo">
+            <div class="col-12 text-center mt-5 pb-5 pt-3 head-todo">
                 <div>
                     <p class="text-white"><span>Home</span> . About us</p>
                 </div>
@@ -101,7 +108,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container pt-5 pb-5">
         <div class="row">
             <div class="col-12 col-md-6 mb-4 abt-header">
                 <h2>.</h2>
@@ -117,47 +124,48 @@
                     risus eget. Nec donec sit nullam nec dolor proin quam. Enim vulputate mauris nulla amet urna.
                     Egestas elementum volutpat ut enim nunc id in.</p>
             </div>
-            <div class="col-12 col-md-6 about-driver d-none d-md-block mb-5">
-                <img src="./img/aboutdriver.png" width="430px" height="415px" class="position-absolute" />
-                <img src="./img/trust.png" class="position-relative" width="200px" height="200px" />
+            <div class="col-12 col-md-6 about-driver d-none d-md-block mb-5 my-5">
+                <img src="./img/aboutdriver.png" width="430px" height="415px" class="position-absolute img-fluid" />
+                <img src="./img/trust.png" class="position-relative img-fluid" width="200px" height="200px" />
             </div>
         </div>
     </div>
 
-    <div class="container-fluid bg-container5 mt-5">
-        <div class="row">
-            <div class="col-12 text-center mb-4 abt-header">
+    <div class="container-fluid bg-container5 pt-5 pb-5">
+        <div class="row text-center pl-md-5 pr-md-5">
+            <div class="col-12 mb-4 abt-header">
                 <h2>.</h2>
                 <p>Relax Benefit List</p>
                 <h1 class="text-white">Why Choose Us</h1>
             </div>
-            <div class="col-12 col-md-3">
-                <div class="choose-container">
-                    <img src="./img/icon11.png" />
+            <!-- Benefit Boxes -->
+            <div class="col-12 col-md-3 d-flex align-items-stretch ">
+                <div class="choose-container p-4 text-center">
+                    <img src="./img/icon11.png" class="img-fluid mb-3" alt="Safety Guarantee Icon" />
                     <h2>Safety Guarantee</h2>
                     <p>Your safety is our priority. Ride with confidence. All our drivers are verified & background
                         checked. Safe rides, every time.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-3">
-                <div class="choose-container choose-border">
-                    <img src="./img/icon12.png" />
+            <div class="col-12 col-md-3 d-flex align-items-stretch">
+                <div class="choose-container choose-border p-4 text-center">
+                    <img src="./img/icon12.png" class="img-fluid mb-3" alt="On-Time Pickup Icon" />
                     <h2>On-Time Pickup</h2>
                     <p>No more waiting. Your ride arrives when it should. Experience the reliability of our on-time
                         pickups.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-3">
-                <div class="choose-container choose-border">
-                    <img src="./img/icon13.png" />
+            <div class="col-12 col-md-3 d-flex align-items-stretch">
+                <div class="choose-container choose-border p-4 text-center">
+                    <img src="./img/icon13.png" class="img-fluid mb-3" alt="Affordable Ride Icon" />
                     <h2>Affordable Ride</h2>
-                    <p>Quality rides, affordable prices. Experience comfort and convenience with Budget-friendly rides.
+                    <p>Quality rides, affordable prices. Experience comfort and convenience with budget-friendly rides.
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-md-3">
-                <div class="choose-container choose-border">
-                    <img src="./img/icon14.png" />
+            <div class="col-12 col-md-3 d-flex align-items-stretch">
+                <div class="choose-container choose-border p-4 text-center">
+                    <img src="./img/icon14.png" class="img-fluid mb-3" alt="24/7 Support Icon" />
                     <h2>24/7 Support</h2>
                     <p>Never alone on the road. Enjoy peace of mind with our 24/7 support service.</p>
                 </div>
@@ -165,7 +173,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container pt-5 pb-5">
         <div class="row">
             <div class="col-12 text-center mb-4 abt-header">
                 <h2>.</h2>
@@ -174,7 +182,7 @@
             </div>
             <div class="col-12 col-md-4 mt-3">
                 <div class="offer-container text-center">
-                    <img src="./img/offer1.png"/>
+                    <img src="./img/offer1.png" class="img-fluid"/>
                     <h2>One way Trip</h2>
                     <p>Travel to a destination without returning to the starting point, often for relocation, exploration, or specific events.</p>
                     <button>Book cab Now</button>
@@ -182,7 +190,7 @@
             </div>
             <div class="col-12 col-md-4 mt-3">
                 <div class="offer-container text-center">
-                    <img src="./img/offer2.png"/>
+                    <img src="./img/offer2.png" class="img-fluid"/>/>
                     <h2>Round Trip</h2>
                     <p>Daily commute, a rhythmic journey between work and home, a familiar cycle.</p>
                     <button>Book cab Now</button>
@@ -190,7 +198,7 @@
             </div>
             <div class="col-12 col-md-4 mt-3">
                 <div class="offer-container text-center">
-                    <img src="./img/offer3.png"/>
+                    <img src="./img/offer3.png" class="img-fluid"/>/>
                     <h2>Outstation Trip</h2>
                     <p>The excitement of travel with the discovery of new destinations, offering a change of scenery and pace.</p>
                     <button>Book cab Now</button>
@@ -200,16 +208,16 @@
     </div>
 
      <!-- Book now section -->
-     <div class="container-fluid bg-container6 mt-4">
+     <div class="container-fluid bg-container6 mt-4 pt-5">
         <div class="row">
-            <div class="col-12 p-4 book-container">
+            <div class="col-12 p-4 book-container pl-md-5 pr-md-5">
                 <p>Make a call or Book Online</p>
                 <div class="d-md-flex flex-row justify-content-between">
                     <h1>Call our Agent to get a Quote</h1>
                     <button class="btn book-btn">Book Cab Now</button>
                 </div>
             </div>
-            <div class="zig-container">
+            <div class="zig-container pt-5">
                 <div class="col-12 zigzaw">
                     <img src="./img/zigzaw2.png" />
                     <img src="./img/zigzaw2.png" />
@@ -223,81 +231,7 @@
 
     <!-- Footer -->
 
-    <div class="bg_container3">
-        <div class="container-fluid bg_container pt-5">
-            <div class="row">
-                <div class="d-md-flex flex-row">
-                    <div class="col-12 col-md-3  footer_content ">
-                        <h3>About</h3>
-                        <p class="text-justify">Relax Cabs is one of the best cab service around TamilNadu. We give best
-                            rides with best
-                            quality services. </p>
-                    </div>
-                    <div class="col-12 col-md-3 footer_content ">
-                        <h3>Links</h3>
-                        <p href="#">Home</p>
-                        <p href="#">About</p>
-                        <p href="#">Tariff</p>
-                        <p href="#">Packages</p>
-                        <p href="#">Gallery</p>
-                        <p href="#">Contact</p>
-                    </div>
-                    <div class="col-12 col-md-3 footer_content ">
-                        <h3>Contact</h3>
-                        <p><i class="fa-solid fa-location-dot"></i> 100,xxxxxxxxxxxxxxxxxx,
-                            xxxxxxxxxxxxxxxxxxxxxxx</p>
-                        <p><i class="fa-solid fa-phone-volume"></i> +91 98765 43210</p>
-                        <p><i class="fa-solid fa-envelope"></i> xxxxxxxxx@mail.com</p>
-                    </div>
-                    <div class="col-12 col-md-3 footer_content">
-                        <h3>Newsletter</h3>
-                        <p>Sign up now for our mailing list to get all latest news and updates from Relax Cabs.</p>
-                        <div class="form-container">
-                            <form>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Enter Your E-mail">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fa-solid fa-arrow-right"></i></span>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr class="line">
-            <div class="row d-none d-md-block pb-2">
-                <div class="d-flex flex-row footer_content">
-                    <div class="col-md-2 col-12">
-                        <img src="./img/logo.png" />
-                    </div>
-                    <div class="col-md-3 col-12">
-                        <p>Copyright &copy; 2024, All Rights Reserved.</p>
-                    </div>
-                    <div class="col-md-3 col-12">
-                        <p>Desgined by ANJANA INFOTECH</p>
-                    </div>
-                    <div class="col-md-2 col-12">
-                        <p>Terms of use</p>
-                    </div>
-                    <div class="col-md-2 col-12">
-                        <p>Privacy Policy</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row d-md-none">
-                <div class="col-12 text-center footer_content">
-                    <p>Copyright &copy; 2024, All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-        <div class="zig-container">
-            <div class="col-12 zigzaw">
-                <img src="./img/zigzaw2.png" />
-                <img src="./img/zigzaw2.png" />
-            </div>
-        </div>
-    </div>
+    <?php include('./include/footer1.php');?>
 
     <!-- End Footer -->
 
