@@ -228,10 +228,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         }
 
         echo json_encode($response);
-    }else if($_POST['action']=='delete-package'){
+    } else if ($_POST['action'] == 'delete-package') {
         $id = $_POST['id'];
 
-        $result = mysqli_query($connect,"delete from packages where id = '$id'");
+        $result = mysqli_query($connect, "delete from packages where id = '$id'");
 
         if ($result) {
             $response['success'] = "Package Deleted Successfully";
@@ -239,6 +239,38 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $response['failed'] = "Failed to delete....";
         }
 
+        echo json_encode($response);
+    } else  if ($_POST['action'] == 'update-settings') {
+        $id = $_POST['id'];
+
+        $username = $_POST['username'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone_number'];
+        $address = $_POST['address'];
+        $site_name = $_POST['site_name'];
+        $location = $_POST['location'];
+        $aboutus = $_POST['aboutus'];
+        $logo = $_POST['existing_logo'];
+
+        if (isset($_FILES['logo']['tmp_name']) && is_uploaded_file($_FILES['logo']['tmp_name'])) {
+            $target = '../../img/logo/';
+            $file = $_FILES['logo']['tmp_name'];
+            $logo = $target . basename($_FILES['logo']['name']);
+
+            if (!move_uploaded_file($file, $logo)) {
+                $response['failed'] = 'Fail...!';
+                echo json_encode($response);
+                exit;
+            }
+        }
+
+        $result = mysqli_query($connect, "update settings set username='$username',email='$email',phone='$phone',address='$address',site_name='$site_name',logo='$logo',location='$location',aboutus='$aboutus' where id ='$id'");
+
+        if ($result) {
+            $response['success'] = "Settings Updated Successfully";
+        } else {
+            $response['failed'] = "Failed to Update....";
+        }
         echo json_encode($response);
     }
 }
